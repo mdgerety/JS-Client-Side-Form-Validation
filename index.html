@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
   <head>
     <meta charset="utf-8">
-    <a
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Client Side Form Validation</title>
   </head>
   <body>
-    <script type="text/javascript" src="app.js">
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="">Username</label>
+          <input type="text" placeholder="mdgerety" id="username">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Email</label>
+          <input type="text" placeholder="michael@gerety.com" id="email">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password</label>
+          <input type="text" placeholder="password" id="password">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Confirm Password</label>
+          <input type="text" placeholder="Confirm Password" id="confirmPassword">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error Message</small>
+        </div>
 
-    </script>
+        <button>Submit</button>
+      </form>
+    </div>
+    
+
+
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
